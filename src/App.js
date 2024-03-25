@@ -1,9 +1,12 @@
-import { Home } from "./components";
+import { AboutUs, Home, Recipes, Work } from "./components";
 
 function App() {
   return (
     <>
       <Home />
+      <Work />
+      <AboutUs />
+      <Recipes />
     </>
   );
 }

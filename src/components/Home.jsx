@@ -1,41 +1,59 @@
 import React from "react";
-// import LeftPic from "../assests/Rectangle 264.png";
-import RightPic from "../assests/Mask Group (2).png";
-import FooterImg from "../assests/Mask Group (3).png";
+import LeftPic from "../assests/leftPic.png";
+import rightPic from "../assests/rightPic.png";
+import FooterImg from "../assests/footerPic.png";
+import icon1 from "../assests/ant-design_twitter-outlined.png";
+import icon2 from "../assests/brandico_facebook-rect.png";
+import icon3 from "../assests/bx_bxl-instagram-alt.png";
+import icon4 from "../assests/bx_bxl-vk.png";
+import bread from "../assests/bread.png";
+import { Stack, Box, Text, Image } from "@chakra-ui/react";
+import "../styles/home.css";
+import MyButton from "../common/Button";
 
 const Home = () => {
   return (
-    <section className="">
-      <div
-        className="leftPart"
-        style={{ backgroundImage: "url('../assests/Rectangle 264.png')" }}
+    <Stack className="flex flex-row mainHome">
+      <Stack
+        style={{ backgroundImage: `url(${LeftPic})` }}
+        className="w-[1214px] h-[840px] relative"
       >
-        {/* <img src={LeftPic} alt="..." className="w-[1214px] h-[840px]" /> */}
-        <h2 className="uppercase text-white text-lg translate-y-[26px] translate-x-[352px] font-bold">
-          peachy pup <br /> beakary
-        </h2>
-        <div className="text-white translate-y-[288px] translate-x-[352px] absolute">
-          <p className="uppercase  text-[74px]  font-[800] ">Tasty pastries</p>
-          <p className="w-[552px] h-[78px]">
+        <Text className="uppercase lg:translate-y-[26px] sm:translate-y-[15px]  lg:translate-x-[352px] sm:translate-x-[100px]  text-white xl:text-xl lg:text-lg md:text-lg sm:text-lg mw-[248px]">
+          Peachy Pup <br /> Bakery
+        </Text>
+        <Box className="innerContect lg:translate-y-[260px] sm:translate-y-[150px] lg:translate-x-[310px] sm:translate-x-[100px]  text-white xl:text-lg lg:text-lg md:text-md sm:text-sm flex flex-col gap-y-12">
+          <Text className="xl:text-[74px] sm:text-lg font-[800] mw-[621px]">
+            Tasty pastries
+          </Text>
+          <Text className="lg:w-[550px] sm:w-[300px]">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the
-          </p>
-          <button className="uppercase font-bold bg-[#fdba10] rounded-full w-[194px] h-[60px]">
-            see more
-          </button>
-        </div>
-        <img
-          className="footerImg absolute top-[800px] left-0"
-          src={FooterImg}
-          alt="..."
-        />
-      </div>
+          </Text>
 
-      <div className="rightPart inline-block ">
-        <img src={RightPic} alt="..." className="z-[-1] w-[689px] h-[840px]" />
-      </div>
-    </section>
+          <MyButton text="see more" />
+        </Box>
+        <Box className="footCon absolute left-0 lg:top-[77%] sm:top-[76%]  lg:w-[449px] sm:w-[300px] lg-h-[201px] sm:h-[75px]">
+          <Image src={FooterImg} alt="..." className="bg-white" />
+          <Box className="absolute right-14 top-4 flex flex-col lg:gap-6 sm:gap-1">
+            <Image src={icon4} alt="..." />
+            <Image src={icon3} alt="..." />
+            <Image src={icon2} alt="..." />
+            <Image src={icon1} alt="..." />
+          </Box>
+        </Box>
+      </Stack>
+      <Stack
+        style={{ backgroundImage: `url(${rightPic})` }}
+        className="w-[689px] h-[840px] bg-white relative"
+      >
+        <Image
+          src={bread}
+          alt="..."
+          className="absolute top-[273px] lg:-left-[300px] md:-left-[230px] sm:-left[120px]"
+        />
+      </Stack>
+    </Stack>
   );
 };
 

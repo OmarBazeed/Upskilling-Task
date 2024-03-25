@@ -1,0 +1,8 @@
+.mainHome {
+  flex-direction: row !important;
+}
+@media (max-width: 625px) {
+  .footCon {
+    top: 79% !important;
+  }
+}
