@@ -14,7 +14,7 @@
     width: 200px !important;
   }
   .leftConPic {
-    top: 85% !important;
+    top: 87% !important;
   }
   .rightPic {
     top: 530px;
@@ -41,6 +41,15 @@
   /*about*/
   .aboutHead {
     font-size: 50px;
+  }
+  .aboutText {
+    height: 218px;
+    overflow: hidden;
+  }
+  .cheifPic {
+    left: -60%;
+    max-width: 150%;
+    top: 70%;
   }
   /*test*/
   .testHead {

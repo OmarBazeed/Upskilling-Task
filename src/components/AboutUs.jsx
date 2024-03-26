@@ -15,7 +15,7 @@ const AboutUs = () => {
           About <br /> Us
         </Text>
         <Box className="innerContect lg:translate-y-[100px] sm:translate-y-[250px] lg:translate-x-[310px] sm:translate-x-[100px]  text-white xl:text-lg lg:text-lg md:text-md sm:text-sm flex flex-col gap-y-4">
-          <Text className="lg:w-[400px] sm:w-[300px]">
+          <Text className="lg:w-[400px] sm:w-[300px] aboutText">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -37,7 +37,7 @@ const AboutUs = () => {
         <Image
           src={chief}
           alt="..."
-          className=" absolute top-[90px] lg:-left-[115px] md:-left-[230px] sm:-left[120px]"
+          className=" absolute top-[90px] lg:-left-[115px] md:-left-[230px] sm:-left[120px] cheifPic"
         />
       </Stack>
     </Stack>
