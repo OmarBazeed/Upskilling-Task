@@ -29,7 +29,7 @@ const Contact = () => {
       });
       setPlay(true);
       toast({
-        title: res.data.message,
+        title: res.data?.message,
         position: "top-right",
         isClosable: true,
       });
@@ -41,7 +41,7 @@ const Contact = () => {
       Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: error.response.data.errors[0].msg,
+        text: error.response.data?.errors[0].msg || "Check Your Data",
       });
     }
   };
