@@ -41,7 +41,7 @@ const Contact = () => {
       Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: error.response.data?.errors[0].msg || "Check Your Data",
+        text: error.response?.data?.errors[0].msg || "Check Your Entered Data",
       });
     }
   };
