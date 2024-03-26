@@ -10,10 +10,10 @@ const Testymonials = () => {
       style={{ backgroundImage: `url(${testmonialsPic})` }}
       className="w-full h-[898px] bg-[#C98A40]"
     >
-      <Text className="font-extrabold text-white mx-auto text-8xl my-16">
+      <Text className="font-extrabold text-white mx-auto text-8xl my-16 testHead">
         Testymonials
       </Text>
-      <Box className="flex flex-wrap">
+      <Box className="flex flex-wrap cardCon">
         <Card maxW="sm" className="border bg-white m-auto p-2 rounded-xl px-5">
           <Text className="text-[#C98A40] text-xl font-bold"> Test</Text>
           <Stack mt="6" spacing="3">
@@ -41,7 +41,7 @@ const Testymonials = () => {
           <Image src={startsPic} alt="..." className="w-[150px] my-4" />
         </Card>
       </Box>
-      <Box className="flex flex-wrap">
+      <Box className="flex flex-wrap cardCon">
         <Card maxW="sm" className="border bg-white m-auto p-2 rounded-xl px-5">
           <Text className="text-[#C98A40] text-xl font-bold"> Test</Text>
           <Stack mt="6" spacing="3">

@@ -10,8 +10,6 @@ import n3 from "../assests/work_list/3.png";
 import n4 from "../assests/work_list/4.png";
 import MyButton from "../common/Button";
 
-import "../styles/work.css";
-
 const Work = () => {
   return (
     <Stack className="flex relative" style={{ flexDirection: "row" }}>
@@ -19,13 +17,13 @@ const Work = () => {
         style={{ backgroundImage: `url(${leftPic})` }}
         className="w-[689px] h-[840px]"
       >
-        <Text className="w-[277px] absolute lg:left-[200px] sm:left-[75px] lg:top-[150px] sm:top-[250px] text-[#C98A40] lg:text-md sm:text-sm font-semibold">
+        <Text className="w-[277px] absolute lg:left-[200px] sm:left-[75px] lg:top-[150px] sm:top-[250px] text-[#C98A40] lg:text-md sm:text-sm font-semibold loP">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the
         </Text>
       </Box>
-      <Stack className="mx-auto bg-transparent absolute z-50 w-3/4 lg:left-[200px] sm:left-[75px] lg:top-[450px] sm:top-[550px] ">
+      <Stack className="mx-auto bg-transparent absolute z-50 w-3/4 lg:left-[200px] sm:left-[75px] lg:top-[450px] sm:top-[550px] stackedImgs ">
         <Box className="flex  items-start justify-between imgsContainer">
           <Image
             src={n2}
@@ -56,7 +54,7 @@ const Work = () => {
         style={{ backgroundImage: `url(${RightPic})` }}
         className="w-[1214px] h-[840px] relative"
       >
-        <Text className="text-7xl font-[800] text-white absolute left-96 top-24">
+        <Text className="text-7xl font-[800] text-white absolute left-96 top-24 weWork">
           How we <br />
           work
         </Text>

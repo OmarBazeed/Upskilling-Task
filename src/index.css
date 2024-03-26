@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (max-width: 625px) {
+  /*home*/
+  .tasty {
+    font-size: 50px;
+  }
+  .leftCon {
+    padding-left: 30px !important;
+  }
+  .loremP {
+    width: 200px !important;
+  }
+  .leftConPic {
+    top: 85% !important;
+  }
+  .rightPic {
+    top: 530px;
+    left: -116px;
+    max-width: 150%;
+  }
+  /*work*/
+  .loP {
+    top: 40%;
+    color: black;
+    z-index: 999;
+  }
+  .stackedImgs {
+    top: 60%;
+    left: 8%;
+  }
+  .imgsContainer img {
+    width: 80px;
+    height: 80px;
+  }
+  .weWork {
+    left: 13%;
+  }
+  /*about*/
+  .aboutHead {
+    font-size: 50px;
+  }
+  /*test*/
+  .testHead {
+    font-size: 4rem;
+  }
+  .cardCon div {
+    height: 150px;
+    overflow: hidden;
+    margin: 5px auto;
+  }
+  /*contact*/
+  .contactCon {
+    flex-direction: column !important;
+    margin-bottom: 15px;
+  }
+}
+.myButton {
+  background-color: #fdba10 !important ;
+}
+.mainHome {
+  flex-direction: row !important;
+}

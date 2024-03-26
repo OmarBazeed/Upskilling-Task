@@ -11,7 +11,7 @@ const AboutUs = () => {
         style={{ backgroundImage: `url(${leftPic})` }}
         className="w-[1214px] h-[840px] relative"
       >
-        <Text className="uppercase lg:translate-y-[26px] sm:translate-y-[15px]  lg:translate-x-[352px] sm:translate-x-[100px]  text-white xl:text-9xl lg:text-5xl md:text-5xl sm:text-2xl max-w-[248px] font-[800] ">
+        <Text className="uppercase lg:translate-y-[26px] sm:translate-y-[15px]  lg:translate-x-[352px] sm:translate-x-[100px]  text-white xl:text-9xl lg:text-5xl md:text-5xl sm:text-2xl max-w-[475px] font-[800] aboutHead ">
           About <br /> Us
         </Text>
         <Box className="innerContect lg:translate-y-[100px] sm:translate-y-[250px] lg:translate-x-[310px] sm:translate-x-[100px]  text-white xl:text-lg lg:text-lg md:text-md sm:text-sm flex flex-col gap-y-4">

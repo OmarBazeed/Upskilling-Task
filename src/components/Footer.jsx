@@ -3,7 +3,10 @@ import FooterApp from "../assests/footerApp.png";
 
 const Footer = () => {
   return (
-    <div className="" style={{ backgroundImage: `url(${FooterApp})` }}></div>
+    <div
+      className=" h-[117px]"
+      style={{ backgroundImage: `url(${FooterApp})` }}
+    ></div>
   );
 };
 
