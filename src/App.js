@@ -1,4 +1,12 @@
-import { AboutUs, Home, Recipes, Work } from "./components";
+import {
+  AboutUs,
+  Contact,
+  Footer,
+  Home,
+  Recipes,
+  Testymonials,
+  Work,
+} from "./components";
 
 function App() {
   return (
@@ -7,6 +15,9 @@ function App() {
       <Work />
       <AboutUs />
       <Recipes />
+      <Testymonials />
+      <Contact />
+      <Footer />
     </>
   );
 }
